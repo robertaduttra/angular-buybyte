@@ -6,16 +6,16 @@
     <nav class="main-header__menu">
         <ul>
             <li>
-               <a>
+               <a href="/produtos"> 
                 <i class="fa-brands fa-shopify"></i>
                 Produtos
             </a> 
             </li>
             <li>
-                <a>
+                <a href="/carrinho">
                     <i class="fa-solid fa-cart-shopping"></i>
                     Carrinho
-                   <span class="badge-carrinho"></span>
+                   <span class="badge-carrinho">{{CarrinhoService.obtemCarrinho().length }}</span>
                 </a>
                
              </li>

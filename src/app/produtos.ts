@@ -5,7 +5,8 @@ export interface IProduto {
     descricaoPreco: string;
     quantidadeEstoque:number;
     imagem: string;
-}
+  }
+
 
 export const produtos: IProduto[] = [
     { id: 1, descricao: "Mouse Gamer Logitech", preco: 439.00, descricaoPreco: "À vista no PIX", imagem: "/assets/mouse-3.jpg",quantidadeEstoque:5 },
@@ -29,3 +30,7 @@ export const produtos: IProduto[] = [
 
    
 ]
+
+export interface IProdutoCarrinho extends IProduto{
+  quantidade: number;
+}
